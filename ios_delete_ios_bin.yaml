@@ -1,0 +1,18 @@
+#simple IOS config in ansible
+---
+- name: Remove test ios bin file from bootflash
+  hosts: iosxe
+  vars:
+    new_ios_bin: "test_os.bin"
+  gather_facts: no
+
+  tasks:
+
+  - name: DELETING {{ new_ios_bin }} from bootflash
+    ios_command:
+      commands:
+        - command: "delete bootflash:{{ new_ios_bin }}"
+          prompt: "[{{ new_ios_bin }}]"
+          answer: "\r"
+    vars:
+      ansible_command_timeout: 10
