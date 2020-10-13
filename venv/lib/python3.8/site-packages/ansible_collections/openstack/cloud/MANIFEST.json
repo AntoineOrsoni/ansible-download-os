@@ -1,0 +1,33 @@
+{
+ "collection_info": {
+  "namespace": "openstack",
+  "name": "cloud",
+  "version": "1.1.0",
+  "authors": [
+   "Openstack"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "cloud",
+   "openstack"
+  ],
+  "description": "Openstack Ansible modules",
+  "license": [
+   "GPL-3.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://opendev.org/openstack/ansible-collections-openstack.git",
+  "documentation": "https://docs.openstack.org/ansible-collections-openstack",
+  "homepage": "https://opendev.org",
+  "issues": "https://review.opendev.org/q/project:openstack/ansible-collections-openstack"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "e2eeead0c44e05dfb6b49837e79ffa0e842fb2578090445bf6a40ae6c745e732",
+  "format": 1
+ },
+ "format": 1
+}

@@ -1,0 +1,37 @@
+{
+ "collection_info": {
+  "namespace": "junipernetworks",
+  "name": "junos",
+  "version": "1.1.0",
+  "authors": [
+   "Ansible Network Community (ansible-network)"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "juniper",
+   "junipernetworks",
+   "junos",
+   "networking",
+   "security",
+   "netconf"
+  ],
+  "description": "Ansible Network Collection for Junipernetworks Junos devices.",
+  "license": [],
+  "license_file": "LICENSE",
+  "dependencies": {
+   "ansible.netcommon": "*"
+  },
+  "repository": "https://github.com/ansible-collections/junipernetworks.junos",
+  "documentation": null,
+  "homepage": null,
+  "issues": null
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "c054056cdcddaf5d55378135892ea9e8836ab676543d96c7844849243d1ca9c4",
+  "format": 1
+ },
+ "format": 1
+}

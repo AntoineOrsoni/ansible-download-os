@@ -1,0 +1,63 @@
+%global namespace ovirt
+%global collectionname ovirt
+%global ansible_collections_dir ansible/collections/ansible_collections
+
+Name: @PACKAGE_NAME@
+Summary: Ansible collection to manage all ovirt modules and inventory
+Version: @RPM_VERSION@
+Release: @RPM_RELEASE@%{?release_suffix}%{?dist}
+Source0: http://resources.ovirt.org/pub/src/@PACKAGE_NAME@/@PACKAGE_NAME@-@PACKAGE_VERSION@.tar.gz
+License: ASL 2.0 and GPLv3+
+Group:          Virtualization/Management
+BuildArch:      noarch
+Url:            http://www.ovirt.org
+
+Requires: ansible >= 2.9.0
+Requires: python3-ovirt-engine-sdk4 >= 4.4.0
+
+%description
+This Ansible collection is to manage all ovirt modules and inventory
+
+%prep
+%setup -c -q
+
+%build
+
+%install
+export PKG_DATA_DIR_ORIG=%{_datadir}/%{ansible_collections_dir}
+export PKG_DATA_DIR=%{buildroot}$PKG_DATA_DIR_ORIG
+export PKG_DOC_DIR=%{buildroot}%{_pkgdocdir}
+sh build.sh install %{collectionname}
+
+%files
+%{_datadir}/%{ansible_collections_dir}/%{namespace}
+%if "%{collectionname}" == "rhv"
+%{_datadir}/%{ansible_collections_dir}/ovirt
+%endif
+
+%doc README.md
+%doc examples/
+
+%license licenses
+
+%changelog
+* Mon Sep 7 2020 Martin Necas <mnecas@redhat.com> - 1.1.3-1
+- Add GPLv3 license
+
+* Mon Aug 17 2020 Martin Necas <mnecas@redhat.com> - 1.1.2-1
+- Add ansible changelogs
+
+* Wed Aug 12 2020 Martin Necas <mnecas@redhat.com> - 1.1.1-1
+- Fix ovirt_permission FQCNs
+
+* Wed Aug 12 2020 Martin Necas <mnecas@redhat.com> - 1.1.0-1
+- Add ovirt_vm_os_info module
+- Add ovirt_disk backup
+- Add ovirt_disk autodetect size when uploading
+- Add ovirt_host add ssh_port
+- Add ovirt_network support of removing vlan_tag
+- Fix ovirt_disk upload
+
+
+* Thu Apr 9 2020 Martin Necas <mnecas@redhat.com> - 1.0.0-1
+- Initial release

@@ -1,0 +1,69 @@
+---
+# tasks file for mongodb_config
+- name: Include variables for os family
+  include_vars:
+    file: "{{ ansible_os_family }}.yml"
+
+- name: Ensure mongod package is installed
+  package:
+    name: "{{ mongod_package }}"
+
+- name: Ensure db_path dir exists
+  file:
+    path: "{{ db_path }}"
+    state: directory
+    owner: "{{ mongodb_user }}"
+    group: "{{ mongodb_group }}"
+
+- name: Copy config file
+  template:
+    src: configsrv.conf.j2
+    dest: /etc/mongod.conf
+    owner: "{{ mongodb_user }}"
+    group: "{{ mongodb_group }}"
+
+- name: Copy keyfile to host
+  copy:
+    content: |
+      {{ openssl_keyfile_content }}
+    dest: /etc/keyfile
+    owner: "{{ mongodb_user }}"
+    group: "{{ mongodb_group }}"
+    mode: 0400
+
+- name: Create systemd service file on RedHat 8+
+  copy:
+    dest: /etc/systemd/system/mongod.service
+    content: |
+      [Unit]
+      Description=MongoDB
+      After=syslog.target network.target
+
+      [Service]
+      Type=forking
+
+      User=mongod
+      Group=mongod
+
+      ExecStart=/usr/bin/mongod --config /etc/mongod.conf
+
+      [Install]
+      WantedBy=multi-user.target
+  register: systemd
+  when:
+    - ansible_os_family == "RedHat"
+    - ansible_distribution_major_version|int >= 8
+
+- name: Reload systemd
+  systemd:
+    daemon_reload: yes
+  when:
+    - ansible_os_family == "RedHat"
+    - ansible_distribution_major_version|int >= 8
+    - systemd.changed == True
+
+- name: Start mongod service
+  service:
+    name: "{{ mongod_service }}"
+    state: started
+    enabled: yes

@@ -1,0 +1,21 @@
+language: python
+python:
+  - "2.7"
+  - "3.5"
+  - "3.6"
+before_install:
+  - python --version
+  - pip install --upgrade pip
+  - export pyv=$(python -c 'from platform import python_version; print(python_version()[:3])')
+  - pip install --requirement requirements-${pyv}.txt
+  - ansible-galaxy collection install community.general
+  - ansible-galaxy collection build
+  - ansible-galaxy collection install community-mongodb-*.tar.gz
+  - pip --version
+  - ansible --version
+  - molecule --version
+  - pytest --version
+script:
+  - ./travis_run.sh
+after_success:
+  - codecov # submit coverage

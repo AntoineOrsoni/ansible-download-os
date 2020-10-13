@@ -1,0 +1,32 @@
+{
+ "collection_info": {
+  "description": "Netapp ElementSW (Solidfire) Collection", 
+  "repository": "https://github.com/ansible-collections/netapp", 
+  "tags": [
+   "storage"
+  ], 
+  "dependencies": {}, 
+  "authors": [
+   "NetApp Ansible Team <ng-ansibleteam@netapp.com>"
+  ], 
+  "issues": null, 
+  "name": "elementsw", 
+  "license": [
+   "GPL-2.0-or-later"
+  ], 
+  "documentation": null, 
+  "namespace": "netapp", 
+  "version": "20.8.0", 
+  "readme": "README.md", 
+  "license_file": null, 
+  "homepage": "https://netapp.io/configuration-management-and-automation/"
+ }, 
+ "file_manifest_file": {
+  "format": 1, 
+  "ftype": "file", 
+  "chksum_sha256": "7270ce0a49d7ed3d8252e67c81bd4b2747aec8f2a2535a492bf66d84355f0c6a", 
+  "name": "FILES.json", 
+  "chksum_type": "sha256"
+ }, 
+ "format": 1
+}

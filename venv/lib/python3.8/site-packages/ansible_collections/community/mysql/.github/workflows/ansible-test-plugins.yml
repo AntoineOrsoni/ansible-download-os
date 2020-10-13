@@ -1,0 +1,95 @@
+name: Plugins CI
+on:
+  push:
+    paths:
+      - 'plugins/**'
+      - 'tests/**'
+      - '.github/workflows/ansible-test.yml'
+  pull_request:
+    paths:
+      - 'plugins/**'
+      - 'tests/**'
+      - '.github/workflows/ansible-test.yml'
+  schedule:
+    - cron: '0 6 * * *'
+
+
+env:
+  mysql_version_file: "./ansible_collections/community/mysql/tests/integration/targets/setup_mysql/defaults/main.yml"
+
+jobs:
+  sanity:
+    name: "Sanity (Python: ${{ matrix.python }}, Ansible: ${{ matrix.ansible }})"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ansible:
+          - stable-2.9
+          - stable-2.10
+          - devel
+        python:
+          - 2.7
+          - 3.8
+    steps:
+
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          path: ansible_collections/community/mysql
+
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install ansible-base (${{ matrix.ansible }})
+        run: pip install https://github.com/ansible/ansible/archive/${{ matrix.ansible }}.tar.gz --disable-pip-version-check
+
+      - name: Run sanity tests
+        run: ansible-test sanity --docker -v --color
+        working-directory: ./ansible_collections/community/mysql
+
+  integration:
+    name: "Integration (Python: ${{ matrix.python }}, Ansible: ${{ matrix.ansible }}, MySQL: ${{ matrix.mysql }})"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        mysql:
+          - 5.7.31
+          - 8.0.21
+        ansible:
+          - stable-2.9
+          - stable-2.10
+          - devel
+        python:
+          - 3.6
+    steps:
+
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          path: ansible_collections/community/mysql
+
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install ansible-base (${{ matrix.ansible }})
+        run: pip install https://github.com/ansible/ansible/archive/${{ matrix.ansible }}.tar.gz --disable-pip-version-check
+
+      - name: Set MySQL version (${{ matrix.mysql }})
+        run: "sed -i 's/^mysql_version:.*/mysql_version: \"${{ matrix.mysql }}\"/g' ${{ env.mysql_version_file }}"
+
+      - name: Run integration tests
+        run: ansible-test integration --docker -v --color --retry-on-error --continue-on-error --python ${{ matrix.python }} --diff --coverage
+        working-directory: ./ansible_collections/community/mysql
+
+      - name: Generate coverage report.
+        run: ansible-test coverage xml -v --requirements --group-by command --group-by version
+        working-directory: ./ansible_collections/community/mysql
+
+      - uses: codecov/codecov-action@v1
+        with:
+          fail_ci_if_error: false

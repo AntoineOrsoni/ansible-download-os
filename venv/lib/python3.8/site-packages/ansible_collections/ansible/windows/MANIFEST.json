@@ -1,0 +1,31 @@
+{
+ "collection_info": {
+  "namespace": "ansible",
+  "name": "windows",
+  "version": "1.0.0",
+  "authors": [
+   "Jordan Borean @jborean93",
+   "Matt Davis @nitzmahone"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "windows"
+  ],
+  "description": "Ansible collection for core Windows pluigns.\n",
+  "license": [],
+  "license_file": "COPYING",
+  "dependencies": {},
+  "repository": "https://github.com/ansible-collections/ansible.windows",
+  "documentation": "https://github.com/ansible-collections/ansible.windows/tree/main/docs",
+  "homepage": "https://github.com/ansible-collections/ansible.windows",
+  "issues": "https://github.com/ansible-collections/ansible.windows/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "b497b336c7fb3abfb2ee47d7bffe1fee78492e74a129efd54e329dca0e60fd55",
+  "format": 1
+ },
+ "format": 1
+}

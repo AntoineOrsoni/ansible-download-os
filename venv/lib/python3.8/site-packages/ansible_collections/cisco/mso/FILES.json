@@ -1,0 +1,1321 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "codecov.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e55a41874408d15b899f7df85fa9f4c6c3c476cf4a9e919b9a396c3f1aa1a1f0",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c38eb11b6b8cd591aed90793ca80bd3c499393f207b96640ddfa571f61f7b4f",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/modules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7397567ac564c85881edb1fd4fe4778754f5d22732f76aec3ff4a12fed649480",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/mso.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f872e624056587793e8b059a626c07c0c705caaf2314ea6c24ae82dcee4293e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_contract_filter.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c62cda9c3f37845f867a4580f8ffc76775b10164ca773750d4cf97416e6dc5a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_anp_epg_staticport.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3114e0cc71350d7604b6c31eb9c4dbb3d187bf7c5d464e5ee78962a5dd2f42bd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_anp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f521a9449ef5c7690425dc9b43302f2f5f3c8943bef42a49ac104b1998807ab",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_vrf_region_hub_network.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2183cc72ba61646fafa13844787b485171e38f7f3cab1ee4285e6468af3f7f21",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_external_epg_selector.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "794e2366d91e1262df9b0f25158d7e8e7aad05eba4b5da47e6f8aa6503b9a212",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_anp_epg.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "da3f5a5b3ef8cf8642a7a73d45fd2b2d638de97dc37524ee85d012e5f79ec1d7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_bd_subnet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af061d1f2fb93e7cb1ed5c9d0b421a2cd8edd96c622d342871cc74c1887c6b0f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_anp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "55cd0bde498c0f9a18d94a3b1fa6d29055885b409187983de2c4f9a4d679c789",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_bd_subnet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6101ecb409e14a718fabcc1f86609ff672047d325249e8fbdc080934a4deed5b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b267fc1545a40c84855005fe89ca51b5afa624821f78f6b7bd23ed5f2494c354",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_tenant.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5cfcab4b87d0d74ea4c6753c93df039f06912482e8a878d637831ff3d9936005",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_vrf_region_cidr_subnet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6354d9a1fed6e118615ecfcebdc21a3468ab541230052ade50a612c12c86bc8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_vrf.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a4b99543f15d9313714e313062d7f69b63e01f0cb179cbee2548fbb813a2a1c6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_anp_epg_staticleaf.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00bf8bd5d2e27451bbabaf29b147ec823ea9a80cdca8335f7275e682f47179e6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_external_epg_contract.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0e707560d4ba69a28a25d0a3c00a0bf2a1893743a4c99b5f4f4859cebc36afad",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_external_epg.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c952fdea69c124d876cb47fa0eb110bc5123e832fba28d039d0aea6bf91e7762",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_vrf_region_cidr.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "21ad03fc4d499166fa8c84c2f8a066ac413d82afc3a07d189f6a2a8f3d9fee57",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_anp_epg.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df7cb2f4e51739fac1a19014c8f1bf7c8ce211e65aab5a6488b8a3a10d008689",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_anp_epg_contract.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0c200b2a7a80d732dc51510014dd8174cf2d43886786bf38995b48df38d8fbf1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_tenant_site.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fae53fbb6c20b9585c7626f8491d8742526f4089510e71bdb0a0cccf44968198",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_backup.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "98b33519071c68b8037a1d22ce328611b08c6aed9705393474e9bd4512f3e28b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_site.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5cf15ce9bcf517d820852ed47c2e8119e5a7f90a12d1f3f779aaeb7fdf5e59ed",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_anp_epg_selector.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "779a61d93bd413b751ba9ca9edae1e9a60ebcc0695b4434409f3889ed3e58588",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_vrf.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "114876e88e97119aa343f7efef7ef4cecac521f63dede36f0662bbeac846ed5f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6203d2db89d4866b140a8a1f9e426399da992dad3e3a21a9b75c2807ee70b69e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_bd_l3out.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "524bde3c21ccd4fd4b4e8177635c5f65831a0bb8180393ace631662bd061b8d3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_anp_epg_domain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c61098a9cc27ea4dcfdef617a891e4a577d94b95906e7c4ad2abb15831c3414",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_role.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "adddfabdc9c111f6fe4ace549b632033861f16cb27f0a7fd8da831edf83ac7c1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_externalepg.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c952fdea69c124d876cb47fa0eb110bc5123e832fba28d039d0aea6bf91e7762",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_external_epg_subnet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99250097cc0d644eeb4183898c38f0d32732392176d4d0af69b012401842a7fb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_filter_entry.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7248be50ff1cc9a8635a89bc1144193ffc4b487b69cf3b71fc906f49363f568e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_bd.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a457c9e35d73470ccd60070070d0a5bcc1227b3827d891797b31700ae62d971c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_anp_epg_subnet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2a0845a6985ebc3f3252e176fda574910ef99182fac4c936780f81956bfe8658",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_vrf_contract.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c763bc64a209a1a07928cfaeeb680b2a727cc2bc7494da22ec5b3f41d66d9ad1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_label.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a6a66707900cdd0e251b576232e2f5037ccc4d010a497697943a52c60900368",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site_vrf_region.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "180b0e70017d72b6748e2dd4c9c03a082b7022cef39a113f040b1ed29f48ccb8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_external_epg_selector.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "26143e45f084565fab5dd4537e269ca35505e01a37ea0c4cfe1bf0aa211229b8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_version.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "efd9c46d036f626cf8ea0b512f9e431d19cfb635702367283bb6eccc7cb9f75b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_l3out.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1faf1c762438d2d3921872861e06d936523db5d29d5dcde5b25b312a8947e3cd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_anp_epg_subnet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a1d543422a0b480dc6daac9c9a49ada6a490661956d70d1ec5165514ee90d210",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_anp_epg_selector.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "48a8d30d99b71e37149663cada5f301756e0374ff62130dfd326de8d56b37dc8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0dfeff88ee45e069ae9a219c303131ba1d714fb61dd928f8e5a5856f8120a00b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template_bd.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dc8d32b923bd40ad36a75d05400aadc7f20b2a9936c511d5219b6c41e0e2dd90",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_site.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "efb98639971a160ff091bbb9cd982e72eeafbddc7d9df364e7a0174da2733538",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mso_schema_template.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f488d21164b3d08dde6a7a3b0ac4bb086400246b5a9530f1ff972dcfb3a66323",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_cidr_subnet",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_cidr_subnet/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_cidr_subnet/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7aebb890694d66e3db3be109b12128651cf771d8bde14107c6871ca4d665d03d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_cidr_subnet/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_selector",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_selector/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_selector/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d93ac5571cf4259693b9fdfa22bde8f575fe86a2b4e7518c1eda137bc54569ef",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_selector/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg_selector",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg_selector/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg_selector/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "560a77d5832c4eb1ef9e594fcaec1621a1b4a26b8b369a3fb947aa33830fb681",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg_selector/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg_contract",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg_contract/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg_contract/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0144248d1cebd9cb3031117a601c27b7a300fae5a7d34b85a464608c2e6e1f0d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg_contract/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_contract_filter",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_contract_filter/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_contract_filter/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d57b0671e39865ea96927f6bb8331e36b27c0299b6e5a395bc176d618e27558b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_contract_filter/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_external_epg_selector",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_external_epg_selector/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_external_epg_selector/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1f1c6746ef0069ecb0dd5d782ad1a0ff3ebe95d63e0e9f3ad6113b580b00955",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_external_epg_selector/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_bd",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_bd/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_bd/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "26aa6f88d3faed4e69a83bf5930955052b98f4c4e0a13cb627234bb7678242e1",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_bd/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_bd",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_bd/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_bd/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "042db5eabd0acc4f254b5b9e62477c30b7ee30ea6ef99d435a863ab450ec65e7",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_bd/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "551e70de19fd59e979c1cb80cf9d5c1d3a77c461617e817b7e3d6f54d3d05b1f",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_external_epg/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_site",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_site/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_site/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec5fae6fa73a04337b077fbdcdbbb86b744fdf92a69d7f4c0b29f06b67c278db",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_site/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_backup",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_backup/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_backup/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d61ead92f5dbc2c56025a08ed0ac2622ece224dc471d1dd5af3ef9a25b6024b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_backup/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_vrf",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_vrf/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_vrf/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c9653b7bc42aebe2968e3dacdef561320c59903567ea98c17410fa6c99f20730",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_vrf/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_version",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_version/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_version/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d6fff962ad77cb90dab75bcebcbac0a0293e59118f7e32d6fa83a6180c14b31a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_version/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_hub_network",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_hub_network/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_hub_network/tasks/hub_network.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "046a1418414c1735c4172bd8762e03294aea4df1230218f7b4194cf64bee4a3c",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_hub_network/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7fb4429f19308f52858a44b0a61dea7d564f02793a0cebc307dad6982453937b",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_hub_network/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_staticport",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_staticport/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_staticport/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3d84f267217b02493b21646b5b6322ec795552bb1df692210a39218392cbef60",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_staticport/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_cidr",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_cidr/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_cidr/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c64de4129f6aaba3e7cd67f5a4e445923d65cd5e6e15309e033d32ff20cede2",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_vrf_region_cidr/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_tenant_site",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_tenant_site/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_tenant_site/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e67fa279003785a74ba6143c7bb0a6c05f327f92cd12d28ff2cf4efd4bf06672",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_tenant_site/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_tenant",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_tenant/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_tenant/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4636698e0ece7722a31ff3c1b74adca27fa982be1d2d9d7274fc750a5525a903",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_tenant/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_user",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_user/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_user/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "12ac3ecda40bbfab24b4a64b944dd589bde1ddd40e8e4c85396174889e514591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_user/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_label",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_label/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_label/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57a585ed8445afaf0906c9aa32fe35cc9723c4fd21a2be0a038a8fa81c68a124",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_label/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg_contract",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg_contract/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg_contract/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b71db99338b56d3d6370d79cf71b6fce70831e86837abc2124775e9454077031",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg_contract/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg_selector",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg_selector/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg_selector/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a89838b8ca3ecca145d533be606ca5a606a995cd4a3fe30da1c441b866b40803",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg_selector/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "26f1a95af038d1094e623e3b3932c0ea77424720bfd4e08b8d9658f56e8cb70e",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_anp_epg/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_domain",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_domain/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_domain/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "702ec9d60bd2714481440557094b320db873a0e208db8b6f9a93e08090a39fd8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_site_anp_epg_domain/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_vrf_contract",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_vrf_contract/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_vrf_contract/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3bde9b794e958a9e7f576e037d82fa119aa4419e753fe91e1149b0c2b6df93a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_schema_template_vrf_contract/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_role",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_role/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_role/tasks/role-ro.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "093e4197d6c56ce5dba6e62bd24c8a0c09e4d9d1c83d8179fe944d37d7427856",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_role/tasks/role-rw.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0de76ea9425e30addcecd3fba6dfb6ecf1f1df01ec03cba865a25e53f55cb417",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_role/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "846df05740a948dbb1273cd49a0942b39e2e9ec82d389a5d4fdda6f5e3453c72",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/mso_role/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e674607496d01ce032bfdbcc3e77ecdcde02f3e9d57080a95682a0cdff6809a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/network-integration.requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/target-prefixes.network",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f73c1c8e2facc4b6f4cacc8ec891c55c2f7363bb9f84ebd007e7c947d63381f3",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/inventory.networking",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "617c5b3826fff8000375cc9ab81761f1e3c628e4a9b7fc2570c98f1e2957f7c4",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c8a4ac4bfdef88e75d6e748e35a42fb4915947dfa2b7dd788626fd829600e014",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.10.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c4527c02ae6954941b8029046aa2e763fa917958a3f36b43633492820aa391a",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.9.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5726d3ec9335a09c124469eca039523847a6b0f08a083efaefd002b83326600",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a8ad79595c324d0703296622061158eff30262f70611afd13a8fc2d74cbc5f9",
+   "format": 1
+  },
+  {
+   "name": "changelogs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/config.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43206e71b00b28f61464ff729ee7c096a6babe481924585846dc0ad75f4e5ae0",
+   "format": 1
+  },
+  {
+   "name": "changelogs/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "919ef00776e7d2ff349950ac4b806132aa9faf006e214d5285de54533e443b33",
+   "format": 1
+  },
+  {
+   "name": "changelogs/.plugin-cache.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "001e100d00c1fcb3a9e5b19aaa117eac42d658b15d6f2413b4c9748a5da274ee",
+   "format": 1
+  },
+  {
+   "name": "changelogs/changelog.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c3998ed789352c12d9ef0a53418f80c89bb3a0c75db6bc212aa038157a893822",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b951cc3d31726c79f8dcb0c4713c7a7713f71464d0b09bf6195b9464b43557ca",
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "38a4680952a5eb9707587cdcc2ea73c8d4de6ed3cf1f054fc08b4f00dc858b02",
+   "format": 1
+  },
+  {
+   "name": ".github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/ansible-test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1cb267414e9687a820980c043c81a4fbaad2387ab6188633bd01c0939735823a",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9149be5104e532f211fdaf2382e022cc37293b92dd4ae2ce2fcad940293ec612",
+   "format": 1
+  },
+  {
+   "name": ".vscode",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".vscode/settings.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d0b33897350295766ce49d5ddf87964e33e1ad285bf7713bc668c518fcd14814",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

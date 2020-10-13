@@ -1,0 +1,6 @@
+---
+- import_tasks: setvars.yml
+- import_tasks: dir.yml
+- import_tasks: install.yml
+- import_tasks: config.yml
+- import_tasks: verify.yml

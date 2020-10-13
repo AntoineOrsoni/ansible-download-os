@@ -1,0 +1,194 @@
+{
+ "files": [
+  {
+   "format": 1, 
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": ".", 
+   "chksum_type": null
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/doc_fragments", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a629828b5936404e9822e066dc372b9f36d24f0a4ace73c9b2dbf99c8d2bb56d", 
+   "name": "plugins/doc_fragments/netapp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "6c03171a55f309244d090b669922904eaeb44f23193761cdcf013430c8109250", 
+   "name": "plugins/module_utils/netapp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3e5f0d4e70b40f7b8fea5425b2a40dcf259e90a07cd7a0d6d8e47afc104a2692", 
+   "name": "plugins/module_utils/netapp_module.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/modules", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "68f8bf0e5817ebf92946ec4032e00aca193c1798a74f3f9c7012eb3aee4a6866", 
+   "name": "plugins/modules/aws_netapp_cvs_filesystems.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "68fc32fc78b2705961604c0ae285875d9fd2156db6d0f412e8e4a7a313877493", 
+   "name": "plugins/modules/aws_netapp_cvs_active_directory.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f7651ef21b5f364a6a07707c011295189fc7e904454a4bab07a0a61e22b1342a", 
+   "name": "plugins/modules/aws_netapp_cvs_snapshots.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "61896270ea0ecffe4b1473acade597564dee5dc8bd82b260f235ffa00b1929e2", 
+   "name": "plugins/modules/aws_netapp_cvs_pool.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/unit", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/unit/compat", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "5401a046e5ce71fa19b6d905abd0f9bdf816c0c635f7bdda6730b3ef06e67096", 
+   "name": "tests/unit/compat/unittest.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0ca4cac919e166b25e601e11acb01f6957dddd574ff0a62569cb994a5ecb63e1", 
+   "name": "tests/unit/compat/builtins.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "tests/unit/compat/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0af958450cf6de3fbafe94b1111eae8ba5a8dbe1d785ffbb9df81f26e4946d99", 
+   "name": "tests/unit/compat/mock.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "2ac97ffc86a13f73d3577d43d1f6d4c4ca19fc27d47ae4438309a61d2b6bd170", 
+   "name": "tests/unit/requirements.txt", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/unit/plugins", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/unit/plugins/modules", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "36ae9ee9625b47dafe609c189bd2e1c0b58b5eae7ce6fd8385ede6ad3b940d36", 
+   "name": "tests/unit/plugins/modules/test_aws_netapp_cvs_snapshots.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "91be562868b567142b3df179b68c3429954dc47153e34bae941648cf9f3ead9e", 
+   "name": "tests/unit/plugins/modules/test_aws_netapp_cvs_active_directory.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "1751b62ad7a600f33894c6525caa0b5e046c01c908fcc72bf07771ba405fa718", 
+   "name": "tests/unit/plugins/modules/test_aws_netapp_cvs_filesystems.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ef3896cd2f30e44beb28a5a8492183ffcb0a9c88564f8cc743e1d5506afb7c56", 
+   "name": "tests/unit/plugins/modules/test_aws_netapp_cvs_pool.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "b15351d43d832b89f239e4b6be367d50350ee64b11fb0ae1581c977fc166ded4", 
+   "name": "README.md", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }
+ ], 
+ "format": 1
+}

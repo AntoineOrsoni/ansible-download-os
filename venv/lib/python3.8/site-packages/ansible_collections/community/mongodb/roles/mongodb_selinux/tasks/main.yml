@@ -1,0 +1,46 @@
+---
+# tasks file for mongodb_selinux
+- name: Include vars for RedHat os family
+  include_vars:
+    file: "{{ ansible_os_family }}-{{ ansible_distribution_major_version }}.yml"
+  when: ansible_os_family == "RedHat"
+
+- name: Include vars for Debian OS family
+  include_vars:
+    file: "{{ ansible_os_family }}.yml"
+  when:
+    - ansible_os_family == "Debian"
+    - ansible_distribution_version != "16.04"
+
+- name: Include vars for Ubuntu 16.04
+  include_vars:
+    file: "{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
+  when:
+    - ansible_distribution == "Ubuntu"
+    - ansible_distribution_version == "16.04"
+
+- name: Install required packages
+  package:
+    name: "{{ required_packages }}"
+
+- name: Copy custom MongoDB SeLinux Policy to Host
+  copy:
+    content: |
+      module mongodb_cgroup_memory 1.0;
+
+      require {
+          type cgroup_t;
+          type mongod_t;
+          class dir search;
+          class file { getattr open read };
+      }
+
+      #============= mongod_t ==============
+      allow mongod_t cgroup_t:dir search;
+      allow mongod_t cgroup_t:file { getattr open read };
+    dest: /root/mongodb_cgroup_memory.te
+
+- name: Compile & Install MongoDB Policy
+  script: files/compile_mongodb_selinux.sh
+  args:
+    creates: /root/mongodb_selinux.success

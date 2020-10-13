@@ -8,20 +8,19 @@
   gather_facts: no
 
   tasks:
-
   - name: COPYING {{ new_ios_bin }} on BOOTFLASH
-    ios_command:
+    cisco.ios.ios_command:
       commands:
-        - command: "copy tftp://172.16.2.14/{{ new_ios_bin }} bootflash:"
-          prompt: "[{{ new_ios_bin }}]"
-          answer: "\r"
+      - command: 'copy tftp://172.16.2.14/{{ new_ios_bin }} bootflash:'
+        prompt: '[{{ new_ios_bin }}]'
+        answer: "\r"
     vars:
       ansible_command_timeout: 1800
 
   - name: CHECK MD5 HASH
-    ios_command:
+    cisco.ios.ios_command:
         commands:
-          - command: "verify /md5 bootflash:{{ new_ios_bin }}"
+        - command: "verify /md5 bootflash:{{ new_ios_bin }}"
     register: md5_result
     vars:
       ansible_command_timeout: 300

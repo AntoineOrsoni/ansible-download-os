@@ -1,0 +1,9 @@
+[all:vars]
+ansible_connection=network_cli
+ansible_user=xxx
+ansible_ssh_pass=xxx
+ansible_network_os=ios
+enable_task_debugger = True
+
+[iosxe]
+1.2.3.4

@@ -1,0 +1,43 @@
+{
+ "collection_info": {
+  "namespace": "cyberark",
+  "name": "conjur",
+  "version": "1.0.7",
+  "authors": [
+   "CyberArk Business Development (@cyberark-bizdev)",
+   "CyberArk Community and Integrations Team (@cyberark/community-and-integrations-team)"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "cyberark",
+   "conjur",
+   "access",
+   "security",
+   "account",
+   "vault",
+   "identity",
+   "credential",
+   "secret",
+   "privileged",
+   "devops"
+  ],
+  "description": "This is a Collection of CyberArk Conjur/DAP toolkit.",
+  "license": [
+   "Apache-2.0"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/cyberark/ansible-conjur-collection",
+  "documentation": null,
+  "homepage": null,
+  "issues": null
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "74fd9059d9e6359c30196f147297145f39ed422c12565076853f93f251e28455",
+  "format": 1
+ },
+ "format": 1
+}

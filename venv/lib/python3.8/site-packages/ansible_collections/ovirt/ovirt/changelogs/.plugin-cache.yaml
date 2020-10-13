@@ -1,0 +1,300 @@
+plugins:
+  become: {}
+  cache: {}
+  callback: {}
+  cliconf: {}
+  connection: {}
+  httpapi: {}
+  inventory:
+    ovirt:
+      description: oVirt inventory source
+      name: ovirt
+      version_added: 1.0.0
+  lookup: {}
+  module:
+    ovirt_affinity_group:
+      description: Module to manage affinity groups in oVirt/RHV
+      name: ovirt_affinity_group
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_affinity_label:
+      description: Module to manage affinity labels in oVirt/RHV
+      name: ovirt_affinity_label
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_affinity_label_info:
+      description: Retrieve information about one or more oVirt/RHV affinity labels
+      name: ovirt_affinity_label_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_api_info:
+      description: Retrieve information about the oVirt/RHV API
+      name: ovirt_api_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_auth:
+      description: Module to manage authentication to oVirt/RHV
+      name: ovirt_auth
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_cluster:
+      description: Module to manage clusters in oVirt/RHV
+      name: ovirt_cluster
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_cluster_info:
+      description: Retrieve information about one or more oVirt/RHV clusters
+      name: ovirt_cluster_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_datacenter:
+      description: Module to manage data centers in oVirt/RHV
+      name: ovirt_datacenter
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_datacenter_info:
+      description: Retrieve information about one or more oVirt/RHV datacenters
+      name: ovirt_datacenter_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_disk:
+      description: Module to manage Virtual Machine and floating disks in oVirt/RHV
+      name: ovirt_disk
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_disk_info:
+      description: Retrieve information about one or more oVirt/RHV disks
+      name: ovirt_disk_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_event:
+      description: Create or delete an event in oVirt/RHV
+      name: ovirt_event
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_event_info:
+      description: This module can be used to retrieve information about one or more
+        oVirt/RHV events
+      name: ovirt_event_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_external_provider:
+      description: Module to manage external providers in oVirt/RHV
+      name: ovirt_external_provider
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_external_provider_info:
+      description: Retrieve information about one or more oVirt/RHV external providers
+      name: ovirt_external_provider_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_group:
+      description: Module to manage groups in oVirt/RHV
+      name: ovirt_group
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_group_info:
+      description: Retrieve information about one or more oVirt/RHV groups
+      name: ovirt_group_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_host:
+      description: Module to manage hosts in oVirt/RHV
+      name: ovirt_host
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_host_info:
+      description: Retrieve information about one or more oVirt/RHV hosts
+      name: ovirt_host_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_host_network:
+      description: Module to manage host networks in oVirt/RHV
+      name: ovirt_host_network
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_host_pm:
+      description: Module to manage power management of hosts in oVirt/RHV
+      name: ovirt_host_pm
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_host_storage_info:
+      description: Retrieve information about one or more oVirt/RHV HostStorages (applicable
+        only for block storage)
+      name: ovirt_host_storage_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_instance_type:
+      description: Module to manage Instance Types in oVirt/RHV
+      name: ovirt_instance_type
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_job:
+      description: Module to manage jobs in oVirt/RHV
+      name: ovirt_job
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_mac_pool:
+      description: Module to manage MAC pools in oVirt/RHV
+      name: ovirt_mac_pool
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_network:
+      description: Module to manage logical networks in oVirt/RHV
+      name: ovirt_network
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_network_info:
+      description: Retrieve information about one or more oVirt/RHV networks
+      name: ovirt_network_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_nic:
+      description: Module to manage network interfaces of Virtual Machines in oVirt/RHV
+      name: ovirt_nic
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_nic_info:
+      description: Retrieve information about one or more oVirt/RHV virtual machine
+        network interfaces
+      name: ovirt_nic_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_permission:
+      description: Module to manage permissions of users/groups in oVirt/RHV
+      name: ovirt_permission
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_permission_info:
+      description: Retrieve information about one or more oVirt/RHV permissions
+      name: ovirt_permission_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_quota:
+      description: Module to manage datacenter quotas in oVirt/RHV
+      name: ovirt_quota
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_quota_info:
+      description: Retrieve information about one or more oVirt/RHV quotas
+      name: ovirt_quota_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_role:
+      description: Module to manage roles in oVirt/RHV
+      name: ovirt_role
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_scheduling_policy_info:
+      description: Retrieve information about one or more oVirt scheduling policies
+      name: ovirt_scheduling_policy_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_snapshot:
+      description: Module to manage Virtual Machine Snapshots in oVirt/RHV
+      name: ovirt_snapshot
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_snapshot_info:
+      description: Retrieve information about one or more oVirt/RHV virtual machine
+        snapshots
+      name: ovirt_snapshot_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_storage_connection:
+      description: Module to manage storage connections in oVirt
+      name: ovirt_storage_connection
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_storage_domain:
+      description: Module to manage storage domains in oVirt/RHV
+      name: ovirt_storage_domain
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_storage_domain_info:
+      description: Retrieve information about one or more oVirt/RHV storage domains
+      name: ovirt_storage_domain_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_storage_template_info:
+      description: Retrieve information about one or more oVirt/RHV templates relate
+        to a storage domain.
+      name: ovirt_storage_template_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_storage_vm_info:
+      description: Retrieve information about one or more oVirt/RHV virtual machines
+        relate to a storage domain.
+      name: ovirt_storage_vm_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_tag:
+      description: Module to manage tags in oVirt/RHV
+      name: ovirt_tag
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_tag_info:
+      description: Retrieve information about one or more oVirt/RHV tags
+      name: ovirt_tag_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_template:
+      description: Module to manage virtual machine templates in oVirt/RHV
+      name: ovirt_template
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_template_info:
+      description: Retrieve information about one or more oVirt/RHV templates
+      name: ovirt_template_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_user:
+      description: Module to manage users in oVirt/RHV
+      name: ovirt_user
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_user_info:
+      description: Retrieve information about one or more oVirt/RHV users
+      name: ovirt_user_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_vm:
+      description: Module to manage Virtual Machines in oVirt/RHV
+      name: ovirt_vm
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_vm_info:
+      description: Retrieve information about one or more oVirt/RHV virtual machines
+      name: ovirt_vm_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_vm_os_info:
+      description: Retrieve information on all supported oVirt/RHV operating systems
+      name: ovirt_vm_os_info
+      namespace: ''
+      version_added: 1.1.0
+    ovirt_vmpool:
+      description: Module to manage VM pools in oVirt/RHV
+      name: ovirt_vmpool
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_vmpool_info:
+      description: Retrieve information about one or more oVirt/RHV vmpools
+      name: ovirt_vmpool_info
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_vnic_profile:
+      description: Module to manage vNIC profile of network in oVirt/RHV
+      name: ovirt_vnic_profile
+      namespace: ''
+      version_added: 1.0.0
+    ovirt_vnic_profile_info:
+      description: Retrieve information about one or more oVirt/RHV vnic profiles
+      name: ovirt_vnic_profile_info
+      namespace: ''
+      version_added: 1.0.0
+  netconf: {}
+  shell: {}
+  strategy: {}
+  vars: {}
+version: 1.1.3

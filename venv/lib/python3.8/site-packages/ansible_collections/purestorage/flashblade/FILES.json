@@ -1,0 +1,432 @@
+{
+ "files": [
+  {
+   "format": 1, 
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": ".", 
+   "chksum_type": null
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "roles", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "roles/.keep", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/sanity", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "83175635ac646a5cfc169ec6316e0ea90071bf4e8e9a79212a413f326a3049bd", 
+   "name": "tests/sanity/ignore-2.9.txt", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "83175635ac646a5cfc169ec6316e0ea90071bf4e8e9a79212a413f326a3049bd", 
+   "name": "tests/sanity/ignore-2.10.txt", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "33a5960e25652a35c5a0e7f90712c9c8b46d825ecbdc388476939d3c09c5f292", 
+   "name": "README.md", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "playbooks", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "playbooks/roles", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "playbooks/roles/.keep", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "playbooks/.keep", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "playbooks/templates", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "playbooks/templates/.keep", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "playbooks/files", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "playbooks/files/.keep", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "playbooks/vars", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "playbooks/vars/.keep", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "playbooks/tasks", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "playbooks/tasks/.keep", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3e51021f3ba146ca62cb72b6287a5ebbe883ac5f3666db3f9d580e5908a13903", 
+   "name": "CHANGELOG.rst", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "changelogs", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "72e2d29ddbf66c657d6998587962e1710c9686ba4b977cc1390ba4add6e09009", 
+   "name": "changelogs/config.yaml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "4d061fb7d21bfa9b82519042254a29ceec0e289fbb186a9ccb25a35daea90f46", 
+   "name": "changelogs/.plugin-cache.yaml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7487df3b189508316bccc7045af4bf5e63a2ba6211e93dab48b0d4db9bf24628", 
+   "name": "changelogs/changelog.yaml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "changelogs/fragments", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "64bd3d32085373ce61a414518c2ed87bfd003d163d3002d087f41f4a54b0b1a0", 
+   "name": "changelogs/fragments/v1.3.0_summary.yaml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/modules", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e2085de6051fd21ca0c15054a30fd30aa70a001a5116c2f0e21ce8af0cb737c6", 
+   "name": "plugins/modules/purefb_bladename.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3a83537f84375cb5bf3dfdd8b9c1cbc342299bbfffab074d8988052976dd1076", 
+   "name": "plugins/modules/purefb_proxy.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "cc3b2332039bdbcdd16e7cac8b192589d6f76175d9bc3a75ebd14864a933d58b", 
+   "name": "plugins/modules/purefb_user.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "219dbbcc1889d99e67d50b4b0d53334c74e285477f816a250b38b4002ab4e044", 
+   "name": "plugins/modules/purefb_dns.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "cfb5f1000dc191404cb21060b08fa978e31e114e016e8d43f4e0e761048c4c38", 
+   "name": "plugins/modules/purefb_alert.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0b56bc85c621d21e05c0dc94019edbb1ea43e1bfa1d767807476331b39e5c9d0", 
+   "name": "plugins/modules/purefb_remote_cred.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0101428677a9fd94d268451bc69d7783c25015e5c75a376edfefa379e9d0e64b", 
+   "name": "plugins/modules/purefb_connect.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "54d5ce348f1238a55792fc5da487e2368a011bd545b43b8d9323da78152a044c", 
+   "name": "plugins/modules/purefb_fs.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "85944c3b8ca407b8e4e9a07e279268ac2c97d96904cb78c52305bbdd50d848c4", 
+   "name": "plugins/modules/purefb_network.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "12912b6a31a8d0df3fbcd2bdd554076d22b6559c51a4fbe7a28f71d3bfe4b44a", 
+   "name": "plugins/modules/purefb_target.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3b4ff34db84448039e75f5fa9389154cd391bcabb0e983357e0d2dc401c5cfbe", 
+   "name": "plugins/modules/purefb_ds.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3db5be15bdd4a0732d6fcaf39ab21c9f56c8436b7d6841b1668c7c1c45214da9", 
+   "name": "plugins/modules/purefb_snmp_agent.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ec782d0a07640f7aa7cbad32edb509a003f4d5c59c8b94414edb3b5131da8fdb", 
+   "name": "plugins/modules/purefb_subnet.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0ac0045d8abba2bbcdbfe528beb55bc2d83ac610f2c387ea4c5b707dad4c6a79", 
+   "name": "plugins/modules/purefb_inventory.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "797af2cd252e220310e50c611ff8aff0dd4007742503de46645f2d5812daaf05", 
+   "name": "plugins/modules/purefb_snmp_mgr.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "298f484adc1916af94d3b0ff09fea240ff8173e407bb4660152231a75510a7c1", 
+   "name": "plugins/modules/purefb_ra.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "bcb8eacb2407bedae3d5fa1b4997b2a45b7ef16847b1224c64a72355b0723b67", 
+   "name": "plugins/modules/purefb_s3acc.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8d68243efe484982ed2b0f93e5cf51cc07a8aefd5515ea8f68c816974f600c9b", 
+   "name": "plugins/modules/purefb_info.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7763dda2a03e5c20d56005f53f088acfe721a85c3e851a7ea1f4b73d9d9b5afe", 
+   "name": "plugins/modules/purefb_s3user.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "42ebcbe13e0b892315497bcbddd44e580f2052ef5ac1f3eddd10ef52a2def635", 
+   "name": "plugins/modules/purefb_snap.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "197ffb1eacbfc83cf2274cb978c9c2770ad46d30ca29e3169041d28f7a2c3212", 
+   "name": "plugins/modules/purefb_smtp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8d130c8196f3b7ed94b6336dccad26f7f3fc9f18b9622ab1a3dcc037df74d75f", 
+   "name": "plugins/modules/purefb_dsrole.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "94c0616e56fd88f432aa606b6a943959a0db9e113a6f5952977681ce276b5c2d", 
+   "name": "plugins/modules/purefb_bucket.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "5c2286ffc1af45be2c5193d7c11f9369229b00ffd59c0f6448594236622d9425", 
+   "name": "plugins/modules/purefb_ntp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ef729c82199a1db2071690991baefe0fec8a57537cf2a501561f582795f008e3", 
+   "name": "plugins/modules/purefb_policy.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "627bf1595d92e3caa55d3cef7f2abca719302771653b4fef1c6d33eab63d1ca4", 
+   "name": "plugins/modules/purefb_bucket_replica.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "5b072171668e4535f9070cf37f79aa529ecb4b38c0cf418f68c0accbc7ef2c2e", 
+   "name": "plugins/modules/purefb_fs_replica.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ccff87f81fec33e66e0057e073b84ae797fd8b78213deca8859a252eab1657f6", 
+   "name": "plugins/modules/purefb_phonehome.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/doc_fragments", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3048ea891e7ed4ea764faa477efbbfbd3ca3a6740adb1c0d1718d19149ee6e29", 
+   "name": "plugins/doc_fragments/purestorage.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a9d526f8cff8e82d7b23eecd1b3817a2ffc694bb11323dc39633370bf68add2a", 
+   "name": "plugins/module_utils/purefb.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }
+ ], 
+ "format": 1
+}

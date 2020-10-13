@@ -1,0 +1,761 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "automation",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "automation/check-patch.packages",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "537b49d33e4c0b38327df976008b8bc9fd2baf9753e785394aa54575f855e116",
+   "format": 1
+  },
+  {
+   "name": "automation/build-artifacts.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c4077d0773a6cc27ce0cbe570dad1e687dea7663982d651c616003587ab0bbe",
+   "format": 1
+  },
+  {
+   "name": "automation/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c29749d822aebf8e458fb5dddef632ad990b77ec16543ba0984589ab53064608",
+   "format": 1
+  },
+  {
+   "name": "automation/build-artifacts-manual.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2084604c62cb513e04dd057ccbece0fa9c3e0de0d7db5c86c70d927c45561743",
+   "format": 1
+  },
+  {
+   "name": "automation/build-artifacts.packages",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "537b49d33e4c0b38327df976008b8bc9fd2baf9753e785394aa54575f855e116",
+   "format": 1
+  },
+  {
+   "name": "automation/check-patch.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2084604c62cb513e04dd057ccbece0fa9c3e0de0d7db5c86c70d927c45561743",
+   "format": 1
+  },
+  {
+   "name": "automation.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a66af564824c2e191d79f94c95a5250b1559b3232667b43c6c49e9afc19b0bc0",
+   "format": 1
+  },
+  {
+   "name": "bindep.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "67b858c3017c25fb5360dbc31b76f303c83a7d8814ac29c9e895bccac4313cc5",
+   "format": 1
+  },
+  {
+   "name": "build.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82bb492570fad20a8524885d2cd4e4d7e7a902e62a4cffefbd9366a61ea75506",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43cfde2a3704c6140c8ad6f056e7319dac97e706785d9a1a3d90e89d8d5a6fdd",
+   "format": 1
+  },
+  {
+   "name": "changelogs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b0284c21364c47c7393209d89f1b07334d9a08f6099720f239fefd38159b95f",
+   "format": 1
+  },
+  {
+   "name": "changelogs/changelog.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25d7eadf9a3ac8f92868c4e6377ae4ec4f0d5cf9b75242e275f76de24b33ed46",
+   "format": 1
+  },
+  {
+   "name": "changelogs/config.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a9855447b14e048a16cd7877ffeab3bfe07496680c55055a3e8de8c0d2fb64bd",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "changelogs/.plugin-cache.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0cdd2dca261cf7dd61e01b699da0123a7a60c5b55f79b4e7c9062041be24ba8c",
+   "format": 1
+  },
+  {
+   "name": "examples",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "examples/filters",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "examples/filters/ovirtdiff.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "66d5ef341d6075c3bf9671fd5b25f41642ef94127ca295e69901b41da9242e2d",
+   "format": 1
+  },
+  {
+   "name": "examples/filters/vmips.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f3c0ede23c25926f83af778160d4b52ea6c11e1dde1e97233dfff27ab8ab835b",
+   "format": 1
+  },
+  {
+   "name": "examples/ovirt_ansible_collections.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e81805423a3ebec7b37b6d380a6fa76732fb3325f3af170eb498c481ddad1873",
+   "format": 1
+  },
+  {
+   "name": "licenses",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "licenses/Apache-license.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f6d5b461deb8038ce0e083c9cb7f59859caa04c9b4f72149367393e9b252cf14",
+   "format": 1
+  },
+  {
+   "name": "licenses/GPL-license.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25354b3afabd2b5a0c3e209aeb30b9002752345651a4dbd6e74adcc0291999c2",
+   "format": 1
+  },
+  {
+   "name": "ovirt-ansible-collection.spec.in",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c9849d2988e3b81d1d2b9b773bd483220ae07f3219250dce82bf5fb6a1cf208f",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/filter",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/filter/ovirtvmip.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7512359e1bd62b76559ab193261c6baa2fe9de569f97e30123f30b5147b7556c",
+   "format": 1
+  },
+  {
+   "name": "plugins/inventory",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/inventory/ovirt.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca2a962116c8ddee2ab0f115a7e5947e2af00f0e176a10409b24df70dc0f06ab",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/cloud.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "91470f6d70e6fbb6bf1ccde2113f13262d094147e2ec3113416ea8d613f5bbd3",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/ovirt.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "545a5735cbc99bdf6ac6cf54f00b85807dbdac725490baf0783f8c86fb147537",
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/ovirt.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "969ad2688d121bc449f61608351ed7d344a6803ace1f586da3cbe161a934289b",
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/ovirt_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3e8411f5cb4b9a0eee7591f476caa70417ca0f6908f085943c5aec698bdfc80",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_disk_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "626e7e2e5b25830810c396ca24ad625faff53ea0deef990433e74d8fd4c5932a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_datacenter_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f0457a889a93ea6275760176be3dafe90b64765f375ae3c66a142bd6b1780ff",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_disk.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ddfc02e8173e8b4a336aa6dd2f6fc658f4fc9caa754e663cc14a8bb210d81c9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_affinity_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "356227080754100c98910c7066f53e8d2f43dfce7a848fb30bbbf370dcbdf45d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_affinity_label.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c612b78a1282cf0ada1e46779879ba79dfcbeec9f6919bfc5c688894513a505b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_affinity_label_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "149dd3db46d6f9c054b296a1fcfe19f99dc9d540e049102d07544dea3e4bf993",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_api_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0fcf3fa080b860a5186fa525a36d0d0f83ee3d502ac26eba7fbb8800b44b8fcd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_auth.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9eb2c9c68b7f5e9ea2c4d93f86c45f9bbf4d9a772e974fab4cc416338ac05cfd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_cluster.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "94eb003ab55cdadc7a2afe758661f470b7e3af84da4687d21202b46a14a3208b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_cluster_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f2a8b7e70aa1afb32978a229a04d10e4eed868fc7cac23c47b4095f973673041",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_datacenter.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50769ca21aedbb66a2413c9a6991d0f54aebf57cb0b5482fa1d300bf105dccd5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_event.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0bcad4a0c8c95b81208cb414e09990ec622b1946247fa62bcfadac3db501aeac",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_event_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "213973b1ff4911dfa3dc5585e61bb423bd3f9128f348fb0bae1ed85994190c1c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_external_provider.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2253c69cd894e5d8b1d13b19e374cfbd8290ee683058ef333b6119c16828df7b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_external_provider_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65d97e66438a52afc3b372cb5f4a8091783d72c0ce8c6e779ae36cf6cda34602",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cd6538d4e18d19e816ca078ea597702b596cbea738ca4bce9f2cde20745b9fb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d9330af75d0dee6a98ad2c764af7447c6a8d602e93ff60019e834bf6d47247d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_host.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e41629d0557d414247fa1120f3da81e056993a2e888fdbcc2b64ac60993d115",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_host_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83c19fb621ada95d5142fb4948dd384b8332210dec9eebe5eda623c33a60af39",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_host_network.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fc8e9977b0b3a8546522a7e2c3ddfa90b8ac6e56f83343b08eadbc345df44e36",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_host_pm.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "51ec49b40fa65d456a38048f325df7982c7debdeb48bd137318c30240f155b29",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_host_storage_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57f8df610cdb0f56051a4738d905683c9a2bc7d46ced2054728b0f0f9804b2f1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_instance_type.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b1856d38726508ff171c3b8d2d5aea7342a2e62c254de87a28cb7ddc1b090752",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_job.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d92d289cc7309d7304cf5d5601fd0806b9cef7e179fd16bdf4ed45e43912d51",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_mac_pool.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c5822a799199e4d7d6e59ec7c0f67a3e56e5728ac0aa5a217b4746f7d4155dc",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_network.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74b1b135135714e20a39b82d4ba80b78a146b57bd7f09ecf8baf7f2b4a29eacc",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_network_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9521af5e52a0f83b60b680ff658ff00cce733dfd0d3e2542487e18642b01f415",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_nic.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e596a472636c28ec90bafd82bdb9aad3cc2c50bd6cc77f42e19bef39be0f520a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_nic_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "47d3be6120dc45dbf741f8bfb4aa2a3f5794294de25e6c4dcb4c8adb019b2f7a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_permission.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "750a5c9a2478519ede7aa1bbb8b4adc7f3078040b392469fb90521efb8faa311",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_permission_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3cd1913108cdcf57ebf6fca236bb5e1fe6f2d869e47424739611c2c35e3ae547",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_quota.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7560839553cf19fbb2cdab3784f2c19e7dc2ed6beda2dcf9137b57156ea7d004",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_quota_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8faa99b500b8e9636885a1903eb44fd14877272fd254c0054aa59c353b3b361e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_role.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f46687d66c7aa5e4e0242f48c4f27cf5a3ea8adba7c0fe6170ad6f72d0bfade1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_scheduling_policy_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2df2893f226eb74ab4d5f876105de61f190ff55c5ea7eba56ec201d4db8c49c6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_snapshot.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0e7483683b0badf4f3f962a774d0ee9dc39e15c9a77bf3468856d3ddf4179faf",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_snapshot_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1bb9d7a26818f289c30da690d22858db6fc684f23ed668272eaf2dc85e80328c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_storage_connection.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5252d0c3b3086a4e429807f10d3b7577f2681673f559c363ac297bb31f7f191a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_storage_domain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b697a4f9b4284a1a3c8c8ee76e154f8dcb0fa4333bb4c6978da4193e9f5e752",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_storage_domain_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e61f1912371c9489bfa94087c46e80e350c0c1e3875cd97be915a8ca4b57ea6f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_storage_template_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c3af9723c461c71f0d3203f75cd4b0e5150987bcbf5d459f9f3221e17b99b143",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_storage_vm_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bdcebaf82ce6a5fbc188f9f7045083dcd66ea2cb394375a0ec3592ae657cde48",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_tag.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "41961b31845824591a0691d386e9a8f8ac2c1b85415b522109a8f1f4e798e161",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_tag_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "22970c74cbbed22aae3b5b6ff50f5a8ffcf0c930a417dffea9a42cdc1768ddb5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_template.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8acfa24a7909f92b93fa04464ea5dddc44e832af9b4d759c028e810ecb9bccf4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_template_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "41388c8bfbd0daf9a473b8767fa1a0e70ab674f120bdc78293b3203aa377fa49",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ade649d12e2e32db210881c5537ea58b7e651630465ae28110324fd91c2ad1f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_user_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "384bd8c82302bed7b8ae17c435879ba41f8d27e4be9e74fc9e1e62e7b5d44af5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_vm.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7693a502ac5725a8087998535c63c72c0e5ff9d3c5401a9801e4019f1e4959df",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_vm_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b306828ba79938b16414d027af5a2b81866b4151bf79125e341742205d09989c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_vm_os_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fa981290d946de51a12ff0cb213a21c7197d89328543e5befcf94d334532d478",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_vmpool.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "badbc107526c539e0a22a127931d80a3621caf3ca244a6e336ea38262e08b20c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_vmpool_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "189b64e8319dec7267ad1b94746bb11ce3b17f18b245f1cea74de98e179f61b7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_vnic_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "165440d6bc6f89eccd5b32b2ea80c4990f10406a241b3338f47577a449872125",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ovirt_vnic_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c910f2bae4956f47094b445bdb9c30753737439d643e5eedc1137d1d4902d5da",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "849af9ecd3e8546ab56a3815f56c1058b039bfe2e0bebad4f8497f89401ec66a",
+   "format": 1
+  },
+  {
+   "name": "requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f0d98bb88ceddd3ad1d0628f266b90716aaa52eb7fcef9fb4a65e12c6b2fc9c",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/.gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b5726d3ec9335a09c124469eca039523847a6b0f08a083efaefd002b83326600",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.10.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35416a0e4c824db47f89daab44b368c2dc48ed010ce44b952f46455eb4cc5fd9",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.9.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35416a0e4c824db47f89daab44b368c2dc48ed010ce44b952f46455eb4cc5fd9",
+   "format": 1
+  },
+  {
+   "name": "ovirt-ansible-collection.spec",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c67cabee5408ae1df7701aa510968b27318638ac724d8edf6257c40f6bd6a22b",
+   "format": 1
+  },
+  {
+   "name": "ovirt-ansible-collection-1.1.3.tar.gz",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e6601ba53dbcdf81bb3d196dc26b606bd72bb6f98d5425ea5b45732082ae447",
+   "format": 1
+  }
+ ],
+ "format": 1
+}
