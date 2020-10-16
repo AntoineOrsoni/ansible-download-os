@@ -1,2 +1,3 @@
-./testbed/hosts
-./venv
+testbed/hosts
+venv
+old

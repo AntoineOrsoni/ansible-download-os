@@ -8,22 +8,34 @@
   gather_facts: no
 
   tasks:
-  - name: COPYING {{ new_ios_bin }} on BOOTFLASH
-    cisco.ios.ios_command:
-      commands:
-      - command: 'copy tftp://172.16.2.14/{{ new_ios_bin }} bootflash:'
-        prompt: '[{{ new_ios_bin }}]'
-        answer: "\r"
-    vars:
-      ansible_command_timeout: 1800
 
-  - name: CHECK MD5 HASH
-    cisco.ios.ios_command:
-        commands:
-        - command: "verify /md5 bootflash:{{ new_ios_bin }}"
-    register: md5_result
+  - name: CONFIGURING QUIET FILE PROMPT
+    ios_config: 
+      lines:
+      - file prompt quiet
     vars:
       ansible_command_timeout: 300
 
-#  - debug:
-#      msg: md5_result == {{ md5_result }}
+  - name: COPYING {{ new_ios_bin }} on BOOTFLASH
+    ios_command:
+      commands:
+      -  copy tftp://172.16.2.14/{{ new_ios_bin }} bootflash:{{ new_ios_bin }}
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ new_ios_bin }}
+      wait_for:
+      - result[0] contains {{ new_ios_md5 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: UNCONFIGURING QUIET FILE PROMPT
+    ios_config: 
+      lines:
+      - no file prompt quiet
+    vars:
+      ansible_command_timeout: 300
