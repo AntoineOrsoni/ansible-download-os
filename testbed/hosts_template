@@ -7,6 +7,7 @@ enable_task_debugger = True
 ansible_become = yes
 ansible_become_method = enable
 ansible_become_password = xxx
+deprecation_warnings = False
 
 [iosxe]
 1.2.3.4
