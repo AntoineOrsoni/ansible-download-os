@@ -15,3 +15,12 @@ apt-get install sshpass
 ## Deleting the IOS
 ![Demo - IOS delete](demo/gif_delete_ios.gif)
 
+# Host file
+
+Allow Ansible to go to exec mode.
+
+```
+ansible_become = yes
+ansible_become_method = enable
+ansible_become_password = xxx
+```
