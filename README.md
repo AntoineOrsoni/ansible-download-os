@@ -8,6 +8,16 @@ Don't forget to install sshpass to use ssh connections with passwords.
 apt-get install sshpass
 ```
 
+# Host file
+
+Allow Ansible to go to exec mode.
+
+```
+ansible_become = yes
+ansible_become_method = enable
+ansible_become_password = xxx
+```
+
 # Demo
 ## Downloading the IOS
 ![Demo - IOS download](demo/gif_get_ios.gif)
