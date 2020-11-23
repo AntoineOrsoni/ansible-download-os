@@ -1,11 +1,28 @@
 #simple IOS config in ansible
 ---
-- name: Sample IOS copy file from TFTP
+- name: Copy IOS XE 16.12.4 files on the router.
   hosts: iosxe
   vars:
-    new_ios_bin: "test_os.bin"
-    new_ios_md5: "d41d8cd98f00b204e9800998ecf8427e"
+    folder_name: "ImageTarget"
     tftp_server: "192.168.255.1"
+    file_1: "asr900rsp3-rpios-universalk9_npe.16.12.04.SPA.pkg"
+    file_2: "asr900rsp3-rpbase.16.12.04.SPA.pkg"
+    file_3: "asr900rsp3-rpaccess.16.12.04.SPA.pkg"
+    file_4: "asr900rsp3-espbase.16.12.04.SPA.pkg"
+    file_5: "packages.conf"
+    file_6: "asr900rsp3-sipspa.16.12.04.SPA.pkg"
+    file_7: "asr900rsp3-rpcontrol.16.12.04.SPA.pkg"
+    file_8: "asr900rsp3-rpboot.16.12.04.SPA.pkg"
+    file_9: "asr900rsp3-sipbase.16.12.04.SPA.pkg"
+    md5_file_1: "a01289077ec79c0c628a5d2c7af3915f"
+    md5_file_2: "3033f6925892b41d21ce8247d48a3864"
+    md5_file_3: "c546fb93c7052a99b20579c2d993bddb"
+    md5_file_4: "7d87b6a28549542428a4eccef60b8620"
+    md5_file_5: "ec83e58f516d0470f97f2c3b6a5ffb88"
+    md5_file_6: "785cc1223ee727cbad03b9e32ccdb764"
+    md5_file_7: "ee194527d0cb281ddd284b68cddc298a"
+    md5_file_8: "e670bc51b02de46ba7cb3c7828ed90e8"
+    md5_file_9: "5460a79df12a9a80fbd58bc37918e961"
   gather_facts: no
 
   tasks:
@@ -17,19 +34,160 @@
     vars:
       ansible_command_timeout: 300
 
-  - name: COPYING {{ new_ios_bin }} on BOOTFLASH
+  - name: CREATING FOLDER {{ folder_name }}
+    file:
+      path: bootflash:{{ folder_name }}
+      state: directory
+
+  - name: COPYING {{ file_1 }} on BOOTFLASH
     ios_command:
       commands:
-      - copy tftp://{{ tftp_server }}/{{ new_ios_bin }} bootflash:{{ new_ios_bin }} vrf Mgmt-intf
+      - copy tftp://{{ tftp_server }}/{{ file_1 }} bootflash:{{ folder_name }}/{{ file_1 }} vrf Mgmt-intf
     vars:
       ansible_command_timeout: 300
 
   - name: CHECK MD5 HASH
     ios_command:
       commands:
-      - verify /md5 bootflash:{{ new_ios_bin }}
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_1 }}
       wait_for:
-      - result[0] contains {{ new_ios_md5 }}
+      - result[0] contains {{ md5_file_1 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ file_2 }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ file_2 }} bootflash:{{ folder_name }}/{{ file_2 }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_2 }}
+      wait_for:
+      - result[0] contains {{ md5_file_2 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ file_3 }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ file_3 }} bootflash:{{ folder_name }}/{{ file_3 }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_3 }}
+      wait_for:
+      - result[0] contains {{ md5_file_3 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ file_4 }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ file_4 }} bootflash:{{ folder_name }}/{{ file_4 }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_4 }}
+      wait_for:
+      - result[0] contains {{ md5_file_4 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ file_5 }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ file_5 }} bootflash:{{ folder_name }}/{{ file_5 }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_5 }}
+      wait_for:
+      - result[0] contains {{ md5_file_5 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ file_6 }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ file_6 }} bootflash:{{ folder_name }}/{{ file_6 }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_6 }}
+      wait_for:
+      - result[0] contains {{ md5_file_6 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ file_7 }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ file_7 }} bootflash:{{ folder_name }}/{{ file_7 }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_7 }}
+      wait_for:
+      - result[0] contains {{ md5_file_7 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ file_8 }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ file_8 }} bootflash:{{ folder_name }}/{{ file_8 }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_8 }}
+      wait_for:
+      - result[0] contains {{ md5_file_8 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ file_9 }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ file_9 }} bootflash:{{ folder_name }}/{{ file_9 }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_9 }}
+      wait_for:
+      - result[0] contains {{ md5_file_9 }}
       retries: 1
     vars:
       ansible_command_timeout: 300
