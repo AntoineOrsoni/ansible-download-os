@@ -1,6 +1,0 @@
----
-# tasks file for mongodb_install
-- name: Install MongoDB Packages
-  package:
-    name: mongodb-org
-    state: present

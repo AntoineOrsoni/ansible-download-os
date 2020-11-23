@@ -5,6 +5,7 @@
   vars:
     new_ios_bin: "test_os.bin"
     new_ios_md5: "d41d8cd98f00b204e9800998ecf8427e"
+    tftp_server: "192.168.255.1"
   gather_facts: no
 
   tasks:
@@ -19,7 +20,7 @@
   - name: COPYING {{ new_ios_bin }} on BOOTFLASH
     ios_command:
       commands:
-      -  copy tftp://172.16.2.14/{{ new_ios_bin }} bootflash:{{ new_ios_bin }}
+      - copy tftp://{{ tftp_server }}/{{ new_ios_bin }} bootflash:{{ new_ios_bin }} vrf Mgmt-intf
     vars:
       ansible_command_timeout: 300
 

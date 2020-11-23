@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/cisco/ansible/venv"
+set -gx VIRTUAL_ENV "/home/anorsoni/Projets/2020-CAP-Altitude/ansible-download-os/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
