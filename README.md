@@ -18,6 +18,12 @@ ansible_become_method = enable
 ansible_become_password = xxx
 ```
 
+# Utilisation
+
+```bash
+ansible-playbook ios_get_new_update.yaml -i /path/to/host/file
+```
+
 # Demo
 ## Downloading the IOS
 ![Demo - IOS download](demo/gif_get_ios.gif)
