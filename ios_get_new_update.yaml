@@ -3,7 +3,6 @@
 - name: Copy IOS XE 16.12.4 files on the router.
   hosts: iosxe
   vars:
-<<<<<<< HEAD
     folder_name: "ImageTarget"
     tftp_server: "192.168.255.1"
     file_1: "asr900rsp3-rpios-universalk9_npe.16.12.04.SPA.pkg"
@@ -24,11 +23,6 @@
     md5_file_7: "ee194527d0cb281ddd284b68cddc298a"
     md5_file_8: "e670bc51b02de46ba7cb3c7828ed90e8"
     md5_file_9: "5460a79df12a9a80fbd58bc37918e961"
-=======
-    new_ios_bin: "test_os.bin"
-    new_ios_md5: "d41d8cd98f00b204e9800998ecf8427e"
-    tftp_server: "172.16.2.14"
->>>>>>> 382709c1f35822d730944f7049fa4c737d3d4eaf
   gather_facts: no
 
   tasks:
@@ -184,11 +178,7 @@
   - name: COPYING {{ file_9 }} on BOOTFLASH
     ios_command:
       commands:
-<<<<<<< HEAD
       - copy tftp://{{ tftp_server }}/{{ file_9 }} bootflash:{{ folder_name }}/{{ file_9 }} vrf Mgmt-intf
-=======
-      - copy tftp://{{ tftp_server }}/{{ new_ios_bin }} bootflash:{{ new_ios_bin }}
->>>>>>> 382709c1f35822d730944f7049fa4c737d3d4eaf
     vars:
       ansible_command_timeout: 300
 
