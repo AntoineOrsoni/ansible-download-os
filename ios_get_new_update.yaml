@@ -14,6 +14,7 @@
     file_7: "asr900rsp3-rpcontrol.16.12.04.SPA.pkg"
     file_8: "asr900rsp3-rpboot.16.12.04.SPA.pkg"
     file_9: "asr900rsp3-sipbase.16.12.04.SPA.pkg"
+    rommon_file: "asr900-rommon.156-42r.S.pkg"
     md5_file_1: "a01289077ec79c0c628a5d2c7af3915f"
     md5_file_2: "3033f6925892b41d21ce8247d48a3864"
     md5_file_3: "c546fb93c7052a99b20579c2d993bddb"
@@ -23,6 +24,7 @@
     md5_file_7: "ee194527d0cb281ddd284b68cddc298a"
     md5_file_8: "e670bc51b02de46ba7cb3c7828ed90e8"
     md5_file_9: "5460a79df12a9a80fbd58bc37918e961"
+    md5_rommon_file: "529808fce70365039164feefccd9f717"
   gather_facts: no
 
   tasks:
@@ -188,6 +190,23 @@
       - verify /md5 bootflash:{{ folder_name }}/{{ file_9 }}
       wait_for:
       - result[0] contains {{ md5_file_9 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
+  - name: COPYING {{ rommon_file }} on BOOTFLASH
+    ios_command:
+      commands:
+      - copy tftp://{{ tftp_server }}/{{ rommon_file }} bootflash:{{ rommon_file }} vrf Mgmt-intf
+    vars:
+      ansible_command_timeout: 300
+
+  - name: CHECK MD5 HASH
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ rommon_file }}
+      wait_for:
+      - result[0] contains {{ md5_rommon_file }}
       retries: 1
     vars:
       ansible_command_timeout: 300
