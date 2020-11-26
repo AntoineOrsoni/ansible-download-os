@@ -1,0 +1,72 @@
+#simple IOS config in ansible
+---
+- name: Pre-setup on the routeur
+  hosts: iosxe
+  gather_facts: no
+
+  tasks:
+  - name: Configuring quiet file prompt
+    ios_config: 
+      lines:
+      - file prompt quiet
+    vars:
+      ansible_command_timeout: 20
+
+  - name: Enabling SCP server
+    ios_config:
+      lines:
+      - ip scp server enable
+    vars:
+      ansible_command_timeout: 20
+
+- name: Creating the folder
+  hosts: iosxe
+  vars:
+    folder_name: "TestAnsible"
+  gather_facts: no
+
+  tasks:
+  - name: Creating folder {{ folder_name }}
+    ios_command:
+      commands:
+      - mkdir bootflash:{{ folder_name }}
+    register: command_result
+    failed_when: "'Invalid input detected at' in command_result" 
+    vars:
+      ansible_command_timeout: 20
+
+- name: Creating the sub-folder
+  hosts: iosxe
+  vars:
+    folder_name: "TestAnsible"
+    sub_folder_name: "16-12-4"
+  gather_facts: no
+
+  tasks:
+  - name: Creating folder {{ folder_name }}/{{ sub_folder_name }}
+    ios_command:
+      commands:
+      - mkdir bootflash:{{ folder_name }}/{{ sub_folder_name }}
+    register: command_result
+    failed_when: "'Invalid input detected at' in command_result" 
+    vars:
+      ansible_command_timeout: 20
+
+- name: Cleaning on the routeur
+  hosts: iosxe
+  gather_facts: no
+
+  tasks:
+  - name: Un-configuring quiet file prompt
+    ios_config: 
+      lines:
+      - no file prompt quiet
+    vars:
+      ansible_command_timeout: 20
+
+  - name: Disabling SCP server
+    ios_config:
+      lines:
+      - no ip scp server enable
+    vars:
+      ansible_command_timeout: 20
