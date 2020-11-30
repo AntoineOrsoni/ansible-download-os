@@ -1,0 +1,7 @@
+---
+- name: Upgrade IOS XE devices
+  hosts: ios
+  gather_facts: no
+
+  roles:
+    - copy-scp

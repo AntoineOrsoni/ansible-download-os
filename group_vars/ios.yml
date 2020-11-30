@@ -1,0 +1,10 @@
+---
+ansible_connection: network_cli
+ansible_network_os: ios
+ansible_scp_if_ssh: True
+#ansible_user: myuser
+#ansible_password: !vault...
+ansible_become: yes
+ansible_become_method: enable
+#ansible_become_password: !vault...
+#ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p -q bastion01"'

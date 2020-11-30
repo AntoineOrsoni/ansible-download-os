@@ -1,4 +1,1 @@
-testbed/hosts
-venv
-old
-ios_get_new_update_test.yaml
+*.retry

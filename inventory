@@ -1,0 +1,9 @@
+all:
+  children:
+    ios:
+      hosts:
+        192.168.255.125:
+      vars:
+        ansible_user: cisco
+        ansible_ssh_pass: cisco
+        ansible_become_password: cisco
