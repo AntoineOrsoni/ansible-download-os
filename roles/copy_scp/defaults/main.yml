@@ -1,0 +1,3 @@
+---
+local_image_directory: roles/copy_scp/files
+remote_image_directory: ansible-images

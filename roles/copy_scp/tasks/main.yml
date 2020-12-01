@@ -1,0 +1,53 @@
+---
+- name: Checking for free space
+  fail:
+    msg: The device does not have enough free space
+  when: ansible_net_filesystems_info['bootflash:']['spacefree_kb'] < 256000.0 # 250 MB
+
+- name: Enabling SCP server
+  ios_config:
+    lines:
+    - ip scp server enable
+  register: scp
+
+- name: Checking if folder exists
+  ios_command:
+    commands:
+    - command: dir bootflash:{{ remote_image_directory }}
+  register: dir_contents
+
+- name: Creating folder
+  ios_command:
+    commands:
+    - command: mkdir bootflash:{{ remote_image_directory }}
+      prompt: Create directory
+      answer: ''
+  when: dir_contents.stdout[0].find('Error') != -1
+
+# - name: Checking existing images
+#   loop: {{  list(map(lambda x: x.split()[-1],  dir_contents.stdout_lines[0][2:-2]))  }} # Sorry - maybe writing a module is a good idea
+#   ios_command:
+#     commands:
+#     - verify /md5 bootflash:{{  remote_image_directory  }}/{{ item }}
+#   register: remote_md5
+
+- name: Copying images
+  loop: "{{  images  }}"
+  net_put:
+    src: "{{  local_image_directory  }}/{{ item.filename }}"
+    dest: bootflash:/{{  remote_image_directory  }}/{{ item.name }}
+  vars:
+    ansible_command_timeout: 1500 # 25 minutes
+
+- name: Checking MD5 hashes
+  loop: "{{  images  }}"
+  ios_command:
+    commands:
+    - verify /md5 bootflash:{{  remote_image_directory  }}/{{ item.filename }}
+    wait_for: result[0] contains {{ item.md5_hash }}
+
+- name: Disabling SCP server
+  ios_config:
+    lines:
+    - no ip scp server enable
+  when: scp.changed

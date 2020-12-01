@@ -1,7 +1,0 @@
----
-- name: Copy files to device 
-  net_put:
-    src: roles/copy-scp/files/{{ item.localpath }}
-    dest: bootflash:/{{ item.name }}
-  loop: "{{  images  }}"
-  debugger: always

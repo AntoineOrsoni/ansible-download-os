@@ -7,3 +7,4 @@ all:
         ansible_user: cisco
         ansible_ssh_pass: cisco
         ansible_become_password: cisco
+        ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p -q snoopy"'

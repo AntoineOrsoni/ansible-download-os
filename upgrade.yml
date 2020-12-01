@@ -3,5 +3,10 @@
   hosts: ios
   gather_facts: no
 
-  roles:
-    - copy-scp
+  tasks:
+    - name: Gather facts
+      ios_facts:
+
+    - name: Copy required files to device
+      include_role:
+        name: copy_scp
