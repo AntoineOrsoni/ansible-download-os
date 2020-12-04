@@ -10,3 +10,5 @@
     - name: Copy required files to device
       include_role:
         name: copy_scp
+      vars:
+        version: 16.12.04

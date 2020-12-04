@@ -2,7 +2,7 @@
 - name: Checking for free space
   fail:
     msg: The device does not have enough free space
-  when: ansible_net_filesystems_info['bootflash:']['spacefree_kb'] < 256000.0 # 250 MB
+  when: ansible_net_filesystems_info['bootflash:']['spacefree_kb'] < versions[version].total_size
 
 - name: Enabling SCP server
   ios_config:
@@ -10,42 +10,37 @@
     - ip scp server enable
   register: scp
 
-- name: Checking if folder exists
-  ios_command:
-    commands:
-    - command: dir bootflash:{{ remote_image_directory }}
-  register: dir_contents
+- name: Creating required directories
+  ios_directory:
+    directories:
+    - bootflash:/{{ remote_image_directory }}
+    - bootflash:/{{ remote_image_directory }}/{{ version }}
+  register: result
 
-- name: Creating folder
-  ios_command:
-    commands:
-    - command: mkdir bootflash:{{ remote_image_directory }}
-      prompt: Create directory
-      answer: ''
-  when: dir_contents.stdout[0].find('Error') != -1
-
-# - name: Checking existing images
-#   loop: {{  list(map(lambda x: x.split()[-1],  dir_contents.stdout_lines[0][2:-2]))  }} # Sorry - maybe writing a module is a good idea
-#   ios_command:
-#     commands:
-#     - verify /md5 bootflash:{{  remote_image_directory  }}/{{ item }}
-#   register: remote_md5
+- name: Checking if files exist
+  ios_file:
+    list_files:
+      directory: bootflash:/{{ remote_image_directory }}/{{ version }}
+      get_md5: True
+  register: file_md5
 
 - name: Copying images
-  loop: "{{  images  }}"
+  loop: "{{  versions[version].images  }}"
+  when: item.name not in file_md5['files'] or item.md5_hash != file_md5['files'][item.name]
   net_put:
-    src: "{{  local_image_directory  }}/{{ item.filename }}"
-    dest: bootflash:/{{  remote_image_directory  }}/{{ item.name }}
+    src: "{{  local_image_directory  }}/{{ version }}/{{ item.filename }}"
+    dest: bootflash:/{{  remote_image_directory  }}/{{ version }}/{{ item.name }}
   vars:
-    ansible_command_timeout: 1500 # 25 minutes
+    ansible_command_timeout: 3500 # 50 minutes
 
-- name: Checking MD5 hashes
-  loop: "{{  images  }}"
-  ios_command:
-    commands:
-    - verify /md5 bootflash:{{  remote_image_directory  }}/{{ item.filename }}
-    wait_for: result[0] contains {{ item.md5_hash }}
+- name: Checking remote files
+  loop: "{{  versions[version].images  }}"
+  ios_file:
+    verify:
+      file: bootflash:{{  remote_image_directory  }}/{{ version }}/{{ item.filename }}
+      expected_md5: "{{ item.md5_hash }}"
 
+# TODO use task blocks to disable SCP even if a failure occured
 - name: Disabling SCP server
   ios_config:
     lines:

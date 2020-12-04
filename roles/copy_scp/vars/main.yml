@@ -1,11 +1,11 @@
 ---
-images:
-  - name: packages.conf
-    filename: packages.conf
-    md5_hash: 31f37661a394fb01b4f9f8221518c2e5
-  - name: plop
-    filename: plop
-    md5_hash: d8e8fca2dc0f896fd7cb4cb0031ba249
-# - name: asr900rsp3-universalk9_npe.16.12.04.SPA.bin
-#   filename: asr900rsp3-universalk9_npe.16.12.04.SPA.bin
-#   md5_hash: 1234
+versions:
+  16.12.04:
+    total_size: 256000.0 # In KB : 250 MB
+    images:
+      - name: packages.conf
+        filename: packages.conf
+        md5_hash: 31f37661a394fb01b4f9f8221518c2e5
+      - name: asr900rsp3-universalk9_npe.16.12.04.SPA.bin
+        filename: asr900rsp3-universalk9_npe.16.12.04.SPA.bin
+        md5_hash: b38b6f41f9124281500834359ddb0d0a
