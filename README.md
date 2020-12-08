@@ -1,32 +1,54 @@
 # ansible-download-os
-Download a new OS from TFTP server using Ansible.
+
+Upload a new OS to Cisco IOS devices via SCP using Ansible.
+
+This repository contains 2 small Ansible modules to manipulate [files](library/ios_file.py) and [directories](library/ios_directory.py) on IOS devices.
+
+The Ansible role [copy_scp](roles/copy_scp) will upload files to IOS devices using SCP. In the role variables, file bundles are specified.
+It does the following:
+- Creates required remote directories on the IOS devices
+- Check if the files are already present on the devices using MD5 hashes
+- Check if the device has enough free space
+- Copy the missing files to the devices using SCP
+- Verify the copied files using MD5 hashes
 
 # Setup
-Don't forget to install sshpass to use ssh connections with passwords.
 
 ```
 pip install -r requirements.txt
-apt-get install sshpass
 ```
 
-# Utilisation
+# Usage
 
-```bash
-ansible-playbook ios_get_new_update.yaml -i /path/to/host/file
+``` bash
+ansible-playbook -i inventory.yml copy-os-ios.yml
 ```
 
-# Host file
+# Configuration
 
-A host file can be provided with the above command, using the `-i` command. Host file will contain information about the device, such as the credentials and IP address. A template has been provided in the `./testbed/hosts` folder.
+## Inventory
 
-## Special configuration
+An inventory file can be provided with the above command, using the `-i` option. Inventory files will contain information about the devices, such as the credentials and IP addresses. A template has been provided [here](inventory.yml).
 
-Allow Ansible to go to exec mode.
+## Ansible role configuration
 
-```
-ansible_become = yes
-ansible_become_method = enable
-ansible_become_password = xxx
+1. Put the files you want to upload to the `roles/copy_scp/files` directory
+2. Update [the role variables](roles/copy_scp/vars/main.yml). This is where you define the file bundles.
+    - `fiilename`: the filename (locally and on the remote devices)
+    - `local_dir`: local directory where the file is located
+    - `remote_dir`: remote directry where the file should be copied
+    - `md5_hash`: the file MD5 hash
+    - `size`: the file size in kB
+3. Ensure the [playbook](copy-os-ios.yml) uses the correct bundle name.
+
+## Ansible global configuration
+
+Eventually create a `ansible.cfg` file in the Ansible working directory to specify any Python virtual envirnement or disable SSH host key check.
+
+``` ini
+[defaults]
+host_key_checking = False
+interpreter_python = venv/bin/python
 ```
 
 # Demo
