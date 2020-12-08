@@ -52,6 +52,29 @@
     vars:
       ansible_command_timeout: 20
 
+- name: Copying OS files on the router
+  hosts: iosxe
+  vars:
+    folder_name: "TestAnsible/16-12-4"
+    tftp_server: "192.168.255.1"
+    file_1: "asr900rsp3-universalk9_npe.16.12.04.SPA.bin"
+    md5_file_1: "303be58bfba375e0f32c620bce8606ed"
+  gather_facts: no
+
+  tasks:
+  - name: Downloading file from SCP Server
+    shell: sshpass -p 'cisco' scp /srv/tftp/{{ file_1 }} cisco@192.168.255.125:/{{ folder_name }}/{{ file_1 }}
+
+  - name: Check MD5 of file {{ file_1 }}
+    ios_command:
+      commands:
+      - verify /md5 bootflash:{{ folder_name }}/{{ file_1 }}
+      wait_for:
+      - result[0] contains {{ md5_file_1 }}
+      retries: 1
+    vars:
+      ansible_command_timeout: 300
+
 - name: Cleaning on the routeur
   hosts: iosxe
   gather_facts: no

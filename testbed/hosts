@@ -11,5 +11,5 @@ ansible_become_password = cisco
 [iosxe]
 192.168.255.125
 
-[tftpserver]
+[scpserver]
 192.168.255.1
