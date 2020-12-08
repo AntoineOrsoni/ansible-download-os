@@ -53,5 +53,5 @@ interpreter_python = venv/bin/python
 
 # Demo
 ## Downloading the IOS
-![Demo - IOS download](demo/gif_get_ios.gif)
+![Demo - IOS download](demo/ios_copy_scp.gif)
 
