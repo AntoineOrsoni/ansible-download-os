@@ -9,7 +9,6 @@ from ansible_collections.cisco.ios.plugins.module_utils.network.ios.ios import (
 def create_directory(module, path, result):
     command = {'command': f'mkdir {path}', 'prompt':'Create directory', 'answer':''}
     response = run_commands(module, command)[0]
-    result['created'].append(path)
     result.update({"changed": True})
 
 def exists(module, path, result):
@@ -20,22 +19,25 @@ def exists(module, path, result):
     elif 'Error' in response:
         msg = "Could check for directory presence on device"
         module.fail_json(msg=msg, stdout=response)
-    result['exists'].append(path)
     return True
 
 def main():
     argument_spec = dict(
-        directories=dict(type="list", elements="str", required=True)
+        directory=dict(type="str", required=True)
         )
     module = AnsibleModule(
         argument_spec=argument_spec, supports_check_mode=False
     )
     result = { "changed": False,
-               "warnings": list(),
-               "created": list(),
-               "exists": list()}
+               "warnings": list()}
 
-    for directory in module.params["directories"]:
+    # Build directory list to create
+    dirnames = module.params["directory"].split('/')
+    directories = []
+    for i in range(2,len(dirnames)+1):
+        directories.append('/'.join(dirnames[:i]))
+
+    for directory in directories:
         if not exists(module, directory, result):
             create_directory(module, directory, result)
     module.exit_json(**result)

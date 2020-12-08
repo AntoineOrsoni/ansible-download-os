@@ -1,48 +1,45 @@
 ---
+- name: Creating required directories
+  loop: "{{ bundles[bundle] | map(attribute='remote_dir') | list | unique }}"
+  ios_directory:
+    directory: "{{  item  }}"
+
+- name: Checking if files exist
+  loop: "{{ bundles[bundle] | map(attribute='remote_dir') | list | unique }}"
+  ios_file:
+    list_files:
+      directory: "{{  item  }}"
+      get_md5: True
+  register: remote_files
+
+- name: Building list of existing files
+  set_fact:
+      files: "{{ remote_files.results | map(attribute='files') | list | combine }}"
+
+- name: Determining required free space
+  loop: "{{  bundles[bundle]  }}"
+  set_fact:
+      required_spacefree: "{{ required_spacefree|default(0)|float + item.size|float }}"
+
 - name: Checking for free space
   fail:
     msg: The device does not have enough free space
-  when: ansible_net_filesystems_info['bootflash:']['spacefree_kb'] < versions[version].total_size
-
-- name: Enabling SCP server
-  ios_config:
-    lines:
-    - ip scp server enable
-  register: scp
-
-- name: Creating required directories
-  ios_directory:
-    directories:
-    - bootflash:/{{ remote_image_directory }}
-    - bootflash:/{{ remote_image_directory }}/{{ version }}
-  register: result
-
-- name: Checking if files exist
-  ios_file:
-    list_files:
-      directory: bootflash:/{{ remote_image_directory }}/{{ version }}
-      get_md5: True
-  register: file_md5
+  when: ansible_net_filesystems_info['bootflash:']['spacefree_kb'] < required_spacefree | float
 
 - name: Copying images
-  loop: "{{  versions[version].images  }}"
-  when: item.name not in file_md5['files'] or item.md5_hash != file_md5['files'][item.name]
+  loop: "{{  bundles[bundle]  }}"
+  when: item.filename not in files or item.md5_hash != files[item.filename]
   net_put:
-    src: "{{  local_image_directory  }}/{{ version }}/{{ item.filename }}"
-    dest: bootflash:/{{  remote_image_directory  }}/{{ version }}/{{ item.name }}
+    src: "{{  item.local_dir  }}/{{ item.filename }}"
+    dest: "{{  item.remote_dir }}/{{ item.filename }}"
+  register: copy
   vars:
-    ansible_command_timeout: 3500 # 50 minutes
+    ansible_command_timeout: 3600 # 1 hour
 
-- name: Checking remote files
-  loop: "{{  versions[version].images  }}"
+- name: Verifying copied files
+  loop: "{{ copy.results }}"
+  when: item.changed
   ios_file:
     verify:
-      file: bootflash:{{  remote_image_directory  }}/{{ version }}/{{ item.filename }}
+      file: "{{  item.remote_dir }}/{{ item.filename }}"
       expected_md5: "{{ item.md5_hash }}"
-
-# TODO use task blocks to disable SCP even if a failure occured
-- name: Disabling SCP server
-  ios_config:
-    lines:
-    - no ip scp server enable
-  when: scp.changed

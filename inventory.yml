@@ -2,6 +2,8 @@ all:
   children:
     ios:
       hosts:
+        192.168.255.123:
+        192.168.255.124:
         192.168.255.125:
       vars:
         ansible_user: cisco
