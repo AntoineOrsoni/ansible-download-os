@@ -41,5 +41,5 @@
   when: item.changed
   ios_file:
     verify:
-      file: "{{  item.remote_dir }}/{{ item.filename }}"
-      expected_md5: "{{ item.md5_hash }}"
+      file: "{{  item.item.remote_dir }}/{{ item.item.filename }}"
+      expected_md5: "{{ item.item.md5_hash }}"
