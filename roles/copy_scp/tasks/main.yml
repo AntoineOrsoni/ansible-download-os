@@ -1,0 +1,45 @@
+---
+- name: Creating required directories
+  loop: "{{ bundles[bundle] | map(attribute='remote_dir') | list | unique }}"
+  ios_directory:
+    directory: "{{  item  }}"
+
+- name: Checking if files exist
+  loop: "{{ bundles[bundle] | map(attribute='remote_dir') | list | unique }}"
+  ios_file:
+    list_files:
+      directory: "{{  item  }}"
+      get_md5: True
+  register: remote_files
+
+- name: Building list of existing files
+  set_fact:
+      files: "{{ remote_files.results | map(attribute='files') | list | combine }}"
+
+- name: Determining required free space
+  loop: "{{  bundles[bundle]  }}"
+  set_fact:
+      required_spacefree: "{{ required_spacefree|default(0)|float + item.size|float }}"
+
+- name: Checking for free space
+  fail:
+    msg: The device does not have enough free space
+  when: ansible_net_filesystems_info['bootflash:']['spacefree_kb'] < required_spacefree | float
+
+- name: Copying images
+  loop: "{{  bundles[bundle]  }}"
+  when: item.filename not in files or item.md5_hash != files[item.filename]
+  net_put:
+    src: "{{  item.local_dir  }}/{{ item.filename }}"
+    dest: "{{  item.remote_dir }}/{{ item.filename }}"
+  register: copy
+  vars:
+    ansible_command_timeout: 3600 # 1 hour
+
+- name: Verifying copied files
+  loop: "{{ copy.results }}"
+  when: item.changed
+  ios_file:
+    verify:
+      file: "{{  item.item.remote_dir }}/{{ item.item.filename }}"
+      expected_md5: "{{ item.item.md5_hash }}"

@@ -1,0 +1,13 @@
+---
+bundles:
+  16.12.04:
+    - filename: packages.conf
+      local_dir: roles/copy_scp/files/16.12.04
+      remote_dir: bootflash:/ImageTarget
+      md5_hash: 31f37661a394fb01b4f9f8221518c2e5
+      size: 7754.0 # In KB
+    - filename: asr900rsp3-universalk9_npe.16.12.04.SPA.bin
+      local_dir: roles/copy_scp/files/16.12.04
+      remote_dir: bootflash:/ImageTarget/16.12.04
+      md5_hash: b38b6f41f9124281500834359ddb0d0a
+      size: 245696.0 # In KB

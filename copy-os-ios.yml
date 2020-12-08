@@ -1,0 +1,31 @@
+---
+- name: Copy OS images to IOS devices
+  hosts: ios
+  strategy: free
+  gather_facts: no
+
+  tasks:
+    - name: Copy files using SCP
+      block:
+        - name: Gather facts
+          ios_facts:
+            gather_subset: hardware
+
+        - name: Enabling SCP server
+          ios_config:
+            lines:
+            - ip scp server enable
+          register: scp
+
+        - name: Copy OS bundle to device
+          include_role:
+            name: copy_scp
+          vars:
+            bundle: 16.12.04
+
+      always:
+        - name: Disabling SCP server
+          ios_config:
+            lines:
+            - no ip scp server enable
+          when: scp.changed
