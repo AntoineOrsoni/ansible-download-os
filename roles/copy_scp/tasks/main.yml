@@ -21,7 +21,7 @@
   set_fact:
       required_spacefree: "{{ required_spacefree|default(0)|float + item.size|float }}"
 
-- name: Checking for free space
+- name: Fail if not enough free space
   fail:
     msg: The device does not have enough free space
   when: ansible_net_filesystems_info['bootflash:']['spacefree_kb'] < required_spacefree | float

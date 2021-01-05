@@ -5,12 +5,12 @@
   gather_facts: no
 
   tasks:
+    - name: Gather facts
+      ios_facts:
+        gather_subset: hardware
+
     - name: Copy files using SCP
       block:
-        - name: Gather facts
-          ios_facts:
-            gather_subset: hardware
-
         - name: Enabling SCP server
           ios_config:
             lines:
