@@ -38,6 +38,7 @@
 
 - name: Verifying copied files
   loop: "{{ copy.results }}"
+  when: item.changed
   ios_file:
     verify:
       file: "{{  item.item.remote_dir }}/{{ item.item.filename }}"
