@@ -18,6 +18,7 @@
 
 - name: Determining required free space
   loop: "{{  bundles[bundle]  }}"
+  when: item.filename not in files or item.md5_hash != files[item.filename]
   set_fact:
       required_spacefree: "{{ required_spacefree|default(0)|float + item.size|float }}"
 
