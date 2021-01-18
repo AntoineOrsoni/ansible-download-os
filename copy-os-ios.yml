@@ -15,7 +15,15 @@
           ios_config:
             lines:
             - ip scp server enable
-          register: scp
+          register: scp_config
+        
+        - name: Disabling remote timeout
+          ios_config:
+            backup: yes
+            parents: line vty 0 15
+            lines:
+            - exec-timeout 0 0
+          register: timeout_config
 
         - name: Copy OS bundle to device
           include_role:
@@ -24,8 +32,13 @@
             bundle: 16.12.04
 
       always:
-        - name: Disabling SCP server
+        - name: Restoring timeout config
+          ios_config:
+            src: "{{ timeout_config.backup_path }}"
+          when: timeout_config.changed
+
+        - name: Restoring scp config
           ios_config:
             lines:
             - no ip scp server enable
-          when: scp.changed
+          when: scp_config.changed
