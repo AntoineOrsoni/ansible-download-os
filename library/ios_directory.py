@@ -6,20 +6,28 @@ from ansible_collections.cisco.ios.plugins.module_utils.network.ios.ios import (
     run_commands,
 )
 
+FILE_NOT_EXIST = ['No such file or directory']
+FATAL_OUTPUT = ['Error', 'Invalid input detected']
+
 def create_directory(module, path, result):
     command = {'command': f'mkdir {path}', 'prompt':'Create directory', 'answer':''}
-    response = run_commands(module, command)[0]
+    run_commands(module, command)[0]
     result.update({"changed": True})
+
+def check_output(module, responses):
+    for idx,response in enumerate(to_lines(responses)):
+        for line in response:
+            if any(word in line for word in FILE_NOT_EXIST):
+                return False
+            if any(word in line for word in FATAL_OUTPUT):
+                msg = "Could check for directory presence on device"
+                module.fail_json(msg=msg, stderr=responses[idx])
+    return True
 
 def exists(module, path, result):
     command = {'command': f'dir {path}'}
-    response = run_commands(module, command, check_rc=False)[0]
-    if 'No such file or directory' in response:
-        return False
-    elif 'Error' in response:
-        msg = "Could check for directory presence on device"
-        module.fail_json(msg=msg, stdout=response)
-    return True
+    responses = run_commands(module, command, check_rc=False)
+    return check_output(module, responses)
 
 def main():
     argument_spec = dict(
@@ -30,7 +38,6 @@ def main():
     )
     result = { "changed": False,
                "warnings": list()}
-
     # Build directory list to create
     dirnames = module.params["directory"].split('/')
     directories = []

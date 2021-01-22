@@ -1,5 +1,6 @@
 *.retry
 venv
 ansible.cfg
+ansible.log
 .vscode
 *-*-*-*-*
