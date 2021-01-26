@@ -5,11 +5,10 @@
     directory: "{{  item  }}"
 
 - name: Checking if files exist
-  loop: "{{ bundles[bundle] | map(attribute='remote_dir') | list | unique }}"
+  loop: "{{ bundles[bundle] }}"
   ios_file:
-    list_files:
-      directory: "{{  item  }}"
-      get_md5: True
+    file: "{{ item.remote_dir }}/{{ item.filename }}"
+    get_md5: True
   register: remote_files
 
 - name: Building list of existing files
@@ -41,6 +40,5 @@
   loop: "{{ copy.results }}"
   when: item.changed
   ios_file:
-    verify:
-      file: "{{  item.item.remote_dir }}/{{ item.item.filename }}"
-      expected_md5: "{{ item.item.md5_hash }}"
+    file: "{{  item.item.remote_dir }}/{{ item.item.filename }}"
+    expected_md5: "{{ item.item.md5_hash }}"
